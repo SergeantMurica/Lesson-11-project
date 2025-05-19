@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <!--
+        Course: CIS133DA
+        Section: Class # 21362
+        Lesson: 11
+        Author: Alexander Castro
+    -->
+    <title>Schedule an Appointment</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Alexander Castro" />
+    <meta
+      name="description"
+      content="Schedule computer services and support for home and business users at Computer Systems Inc." />
+    <meta
+      name="keywords"
+      content="computer repair, IT services, tech support, computer maintenance, business IT, computer diagnostics, data recovery" />
+    <link
+      rel="stylesheet"
+      href="css/mobile_style.css"
+      media="screen and (max-width: 450px)" />
+    <link
+      rel="stylesheet"
+      href="css/tablet_style.css"
+      media="screen and (min-width: 451px) and (max-width: 900px)" />
+    <link
+      rel="stylesheet"
+      href="css/default_style.css"
+      media="screen and (min-width: 901px)" />
+  </head>
+  <body>
+    <div id="wrapper">
+      <header>
+        <h1>Computer Systems Inc.</h1>
+        <nav>
+          <ul>
+            <li><a href="template.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li class="right">
+              <a href="schedule.html" class="active right"
+                >Book an Appointment</a
+              >
+            </li>
+            <li><a href="services.html">Services</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <h2>Pricing List</h2>
+        <table>
+          <tr class="table-header">
+            <th>User Type</th>
+            <th>Services</th>
+            <th>Price</th>
+          </tr>
+          <tr>
+            <th rowspan="7">Home &amp; Business</th>
+            <td>Data recovery &amp; transfer</td>
+            <td rowspan="2">$40 fixed price</td>
+          </tr>
+          <tr>
+            <td>Software installation</td>
+          </tr>
+          <tr>
+            <td>Computer repair</td>
+            <td rowspan="2">$60 per hour + hardware costs</td>
+          </tr>
+          <tr>
+            <td>PC setup and connection</td>
+          </tr>
+          <tr>
+            <td>Computer diagnosis</td>
+            <td rowspan="2">$60 per hour</td>
+          </tr>
+          <tr>
+            <td>Wireless/Wired network setup</td>
+          </tr>
+          <tr>
+            <td>Memory (RAM) upgrade</td>
+            <td>$90 fixed price</td>
+          </tr>
+          <tr>
+            <th rowspan="3">Business</th>
+            <td>24/7 Support Hotline</td>
+            <td>Starting at $300 per month</td>
+          </tr>
+          <tr>
+            <td>Web development</td>
+            <td>Starting at $400</td>
+          </tr>
+          <tr>
+            <td>Monthly software maintenance</td>
+            <td>Starting at $40 per hour</td>
+          </tr>
+        </table>
+
+        <h2>Project Request Form</h2>
+        <p>
+          Computer Systems Inc. can email or call you today to schedule an
+          appointment or project request. Submit the following form and we will
+          get back to you promptly.
+        </p>
+
+        <form
+          action="https://secure.riosalado.edu/cis-course-resources/postscript.aspx"
+          method="post">
+          <label for="firstName">First Name:</label>
+          <input type="text" id="firstName" name="firstName" required />
+
+          <label for="lastName">Last Name:</label>
+          <input type="text" id="lastName" name="lastName" required />
+
+          <label for="email">Email Address:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone" name="phone" required />
+
+          <p>How would you prefer we get back to you?</p>
+          <label
+            ><input type="checkbox" name="contact" value="phone" /> Phone</label
+          >
+          <label
+            ><input type="checkbox" name="contact" value="email" /> Email</label
+          >
+
+          <p>Are you requesting for your home or business?</p>
+          <label
+            ><input type="radio" name="userType" value="home" required />
+            Individual/Home</label
+          >
+          <label
+            ><input type="radio" name="userType" value="business" required />
+            Business</label
+          >
+          <br />
+
+          <label for="comments">Additional Comments:</label>
+          <textarea id="comments" name="comments" required></textarea>
+          <br />
+
+          <button type="submit" onclick="formSubmit()">Submit Form</button>
+          <button type="reset" onclick="formReset()">Reset form</button>
+        </form>
+        <p id="resetMessage">Form has been reset.</p>
+      </main>
+      <footer>
+        <p>
+          <small
+            >Photo by
+            <a href="https://unsplash.com/@clintbustrillos">Clint Bustrillos</a
+            ><br />Copyright by ALE2157855 &copy; 2025 ><br />Last Modified -
+            <span id="lastModified"></span>
+          </small>
+        </p>
+      </footer>
+    </div>
+    <script src="scripts/javascript.js"></script>
+  </body>
+</html>

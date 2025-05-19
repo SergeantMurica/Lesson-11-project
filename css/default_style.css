@@ -1,0 +1,300 @@
+/* 
+Author: ALE2157855
+Course: CIS133DA
+Section: Class # 21362
+Lesson: 9
+*/
+
+/* Body Styles */
+body {
+  font-family: sans-serif;
+  font-size: 100%;
+  cursor: default;
+  margin: 0;
+  background: #f0f0f0;
+}
+/* 
+    I added the background color here because certain viewports made the footer look less desirable, 
+    so I fixed it by making it fixed and adding the background here as well as the required spot 
+    */
+body #wrapper {
+  background: #f0f0f0;
+  margin-top: 2rem;
+}
+/* Header Styles */
+header {
+  background: url(../images/background.jpg) center/cover no-repeat;
+  padding: 100px 0 0 0;
+  margin: 0;
+}
+/* First-level heading */
+header h1 {
+  font-family: Georgia, Times, "Times New Roman", serif;
+  text-align: center;
+  text-shadow: 1px 1px 1px #000;
+  color: #fff;
+  padding: 10px 0 100px 0;
+  margin: 0;
+}
+/* Navigation Bar Styles */
+nav ul {
+  list-style: none;
+  background: rgb(62, 70, 78);
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  border-bottom: 2px solid rgb(255, 145, 0);
+}
+nav ul li {
+  float: left;
+}
+nav ul li a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  padding: 15px;
+  margin: 5px;
+  border: 1px solid #ffffff00;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+nav ul li a:hover:not(.active) {
+  background: rgb(20, 52, 73);
+  border: 1px solid #fff;
+  transform: scale(1.05);
+}
+.active {
+  background: rgb(20, 52, 73);
+  border: 1px solid #fff;
+  cursor: default;
+}
+.right {
+  float: right;
+  margin: 2px 3rem 0 0;
+}
+.right a:not(.active) {
+  background: rgb(194, 115, 12);
+  color: #fff;
+}
+.right a.active {
+  background: rgb(255, 255, 255);
+  color: rgb(255, 145, 0);
+  border: 1px solid rgb(255, 145, 0);
+}
+.right a:hover:not(.active) {
+  background: rgb(255, 145, 0) !important;
+  transform: scale(1.05) !important;
+}
+/* Main Styles */
+main {
+  padding: 10px;
+  margin: 0 auto;
+  width: 90%;
+  max-width: 100%;
+  box-sizing: border-box;
+  min-height: 60vh;
+}
+main aside {
+  width: 30%;
+  box-sizing: border-box;
+  padding: 10px;
+  margin: 10px;
+  float: right;
+  background: rgb(62, 70, 78);
+}
+main aside img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  opacity: 0.6;
+  transition: all 0.3s ease;
+}
+main aside img:hover {
+  opacity: 1;
+  transform: scale(1.05);
+}
+main aside p {
+  margin: 0;
+  color: gray;
+}
+main aside a {
+  color: #eb9696;
+}
+
+/* Lesson 9 New */
+
+/* Table Styles */
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th,
+td {
+  border: 1px solid #000000;
+  background-color: #fff;
+  padding: 5px;
+}
+
+.table-header th {
+  background-color: rgb(62, 70, 78);
+  color: white;
+  padding: 10px;
+}
+
+th {
+  color: rgb(0, 0, 0);
+  padding: 10px;
+}
+
+tr:first-child th {
+  border-bottom-width: medium;
+}
+
+tr th:first-child {
+  border-right-width: medium;
+}
+
+/* Form Styles */
+form {
+  border: 1px solid #333;
+  padding: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  padding: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+textarea {
+  width: 100%;
+  height: 200px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  resize: vertical;
+}
+
+button {
+  margin: 10px 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #333;
+  color: white;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  cursor: pointer;
+}
+
+/* End Lesson 9 New */
+
+/* Lesson 10 New */
+/* Service Card Styles */
+/* These styles will be used for screens larger than 900px */
+main .service-card {
+  background: white;
+  margin: 2rem;
+  box-sizing: border-box;
+  width: calc(50% - 4rem);
+  float: left;
+  min-height: 150px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+
+main .service-card:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  transform: scale(1.02);
+  transition: all 0.3s ease;
+}
+
+main .service-card:nth-child(2n + 1) {
+  clear: left;
+}
+
+main .service-card img {
+  float: left;
+  background-color: #c2730c;
+  margin: 0 15px 0 0;
+  padding: 25px;
+  width: 100px;
+  height: 100px;
+  border-radius: 0;
+}
+
+main .service-card h2 {
+  margin: 0;
+  padding: 0;
+  line-height: 2.4;
+  font-size: 1.2em;
+  color: #3e464e;
+}
+
+main .service-card p {
+  margin: 0;
+  padding: 0;
+  line-height: 1.4;
+  font-size: 0.95em;
+  color: #555454;
+}
+
+/* End Lesson 10 New */
+
+/* Footer Styles */
+footer {
+  background: rgb(62, 70, 78);
+  color: #fff;
+  padding: 20px;
+  margin: 100px 0 0 0;
+  text-align: center;
+  width: 100%;
+  border-top: 2px solid rgb(255, 145, 0);
+}
+footer a {
+  color: #fff;
+}
+
+/*Alert*/
+#alert {
+  color: red;
+  font-weight: bold;
+  font-size: 1.5em;
+  font-family: monospace;
+}
+
+/* Lesson 11 New */
+
+#resetMessage {
+  visibility: hidden;
+  color: red;
+  font-weight: bold;
+}
+
+#lastModified {
+  color: #c2730c;
+}
+
+/* End Lesson 11 New */
+
+@media screen and (min-height: 1040px) {
+  main {
+    width: 100%;
+    min-height: 68vh;
+  }
+}

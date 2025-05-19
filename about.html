@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <!--
+        Course: CIS133DA
+        Section: Class # 21362
+        Lesson: 11
+        Author: Alexander Castro
+    -->
+    <title>About Us</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Alexander Castro" />
+    <meta
+      name="description"
+      content="This is an about page for Computer Systems Inc. Learn more about our company." />
+    <meta
+      name="keywords"
+      content="About, Contact, Services, Computer, Systems, Inc." />
+    <!--I added Contact since most websites have it in the About page, plus the book an appointment link.-->
+    <!-- Link to external style sheet -->
+    <link
+      rel="stylesheet"
+      href="css/mobile_style.css"
+      media="screen and (max-width: 450px)" />
+    <link
+      rel="stylesheet"
+      href="css/tablet_style.css"
+      media="screen and (min-width: 451px) and (max-width: 900px)" />
+    <link
+      rel="stylesheet"
+      href="css/default_style.css"
+      media="screen and (min-width: 901px)" />
+  </head>
+  <body>
+    <div id="wrapper">
+      <header>
+        <h1>Computer Systems Inc.</h1>
+        <nav>
+          <ul>
+            <li><a href="template.html">Home</a></li>
+            <li><a href="about.html" class="active">About</a></li>
+            <li class="right">
+              <a href="schedule.html">Book an Appointment</a>
+            </li>
+            <li><a href="services.html">Services</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <aside>
+          <img src="images/phoenix.jpg" alt="Phoenix City" width="inherit" />
+          <!-- 
+          <img src="images/phoenix.jpg" alt="Phoenix City" width="150" />
+          Changed to inherit so it can be modified in the CSS without having to 
+          change it here or risk bugging the image in older browsers or firefox 
+          (it can not do gradients so I do not trust it haha).
+          -->
+          <p>
+            <small>
+              Photo by
+              <a href="https://unsplash.com/photos/qcofFqnGjww">Joe Cook</a> on
+              <a href="https://unsplash.com/">Unsplash</a>
+              <!--
+              The Guide Image Is Like This. 
+              The directions wanted it to be a linked name after source "Source: Joe Cook"
+              Which doesn't seem to make the minimum citation requirements for Rio Salado (media type, credit, location).
+              I do not want issues with Grades or "Plagarism". So i hope this is okay I took this liberty
+              -->
+            </small>
+          </p>
+        </aside>
+        <article>
+          <h2>Welcome to Computer Systems Incorporated</h2>
+          <p>
+            We are a small but growing computer repair service company that
+            opened our doors in Spring 2022. We are honored to service both home
+            and business users within the greater Phoenix area and our
+            technicians are experienced in servicing computers for both small
+            and large companies.
+          </p>
+          <p>
+            Whether its for home or business computer systems, our technicians
+            are pros at cleaning physical hardware, removing malware and
+            providing anti-virus software solutions, as well as providing
+            computer repair or upgrades at your convenience.
+          </p>
+          <p>
+            Computer Systems Inc. are experts at selecting the best hardware for
+            your business or home on time and within budget, we look forward to
+            your service!
+          </p>
+        </article>
+      </main>
+      <footer>
+        <p>
+          <small>
+            Photo by
+            <a href="https://unsplash.com/@clintbustrillos">Clint Bustrillos</a
+            ><br />Copyright by ALE2157855 &copy; 2025 ><br />Last Modified -
+            <span id="lastModified"></span>
+          </small>
+        </p>
+      </footer>
+    </div>
+    <script src="scripts/javascript.js"></script>
+  </body>
+</html>

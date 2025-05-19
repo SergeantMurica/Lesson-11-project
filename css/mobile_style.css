@@ -1,0 +1,130 @@
+/*
+    Author: Alexander Castro
+    Course: CIS133DA
+    Section: Class #21362
+    Lesson: 10
+    
+    Breakpoint: This stylesheet applies to screens up to 450px
+    This stylesheet is used to adjust the layout and styles for mobile devices.
+    This stylesheet uses a media query in the Head of the HTML for devices with
+    a maximum width of 450px. Therefore, it will only be applied when the viewport 
+    is within this range.
+*/
+
+@import url("default_style.css");
+
+/* Base styles for mobile devices */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+#wrapper {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Header styles for mobile */
+
+header {
+  background: url(../images/background.jpg) center/cover no-repeat;
+  padding: 50px 0 0 0;
+  margin: 0;
+}
+
+header h1 {
+  font-family: Georgia, Times, "Times New Roman", serif;
+  text-align: center;
+  text-shadow: 1px 1px 1px #000;
+  color: #fff;
+  padding: 10px 0 50px 0;
+  margin: 0;
+}
+
+/* Navigation Bar styles for mobile */
+
+nav ul {
+  border-bottom: 2px solid rgb(255, 145, 0);
+  height: 30px; /* Adjusted height for mobile */
+}
+
+nav ul li {
+  font-size: xx-small; /* Adjusted font size for mobile */
+  margin-top: 5px; /* Added margin for spacing */
+}
+
+nav ul li a {
+  padding: 5px;
+  margin: 1px;
+  border: 1px solid #ffffff00;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+nav ul li a:hover:not(.active) {
+  background: rgb(20, 52, 73);
+  border: 1px solid #fff;
+  transform: scale(1.05);
+}
+
+nav ul li.right {
+  float: right;
+  font-size: xx-small;
+}
+.right {
+  margin: 4px 3rem 0 0; /* Adjusted margin for right-aligned items */
+}
+
+nav ul li.right a:not(.active) {
+  float: right;
+  background: rgb(194, 115, 12);
+  color: #fff;
+}
+
+main aside {
+  float: both;
+  width: 100%;
+}
+
+/* Service card adjustments for mobile */
+.service-card {
+  /* Ensures one card per column */
+  min-width: calc(100% - 60px); /* Minimum width for smaller screens */
+  font-size: calc(2em / 2.8); /* Adjusted font size for mobile */
+  margin: 0 auto; /* Center the card */
+}
+
+.service-card img {
+  float: none;
+  display: block;
+  padding: 10px;
+  margin: 0 auto 15px;
+  border-radius: 8px;
+  width: 80px;
+}
+
+.service-card h2 {
+  margin: 0;
+  font-size: 1.2em;
+  color: #333;
+  text-align: center;
+}
+
+.service-card p {
+  margin: 0;
+  font-size: 0.9em;
+  line-height: 1.4;
+  color: #555454;
+}
+
+/* Footer adjustment for mobile */
+footer {
+  padding: 10px;
+  background-color: rgb(23, 59, 95);
+  color: white;
+}

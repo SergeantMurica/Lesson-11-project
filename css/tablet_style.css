@@ -1,0 +1,82 @@
+/* 
+Author: ALE2157844
+Course: CIS133DA
+Section: Class #21362
+Lesson: 10
+
+Breakpoint: This stylesheet applies to screens between 451px and 900px
+This stylesheet is used to adjust the layout and styles for tablet devices.
+This stylesheet uses a media query in the Head of the HTML for devices with 
+a minimum width of 451px and a maximum width of 900px. Therefore, 
+it will only be applied when the viewport is within this range.
+*/
+
+/* Base styles from default_style.css */
+@import url("default_style.css");
+
+/* Navigation adjustments for tablet */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+nav li,
+nav li.right {
+  box-sizing: border-box;
+  font-size: small;
+}
+
+.right {
+  float: right;
+  margin: 3px 3rem 0 0;
+}
+
+nav a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+main aside {
+  float: left;
+  width: 30%;
+}
+
+/* Service card adjustments for tablet */
+.service-card {
+  min-width: calc(90% - 25px); /* Minimum width for smaller screens */
+}
+
+.service-card img {
+  float: none;
+  display: block;
+  padding: 10px;
+  margin: 0 auto 15px;
+  border-radius: 8px;
+  width: 100px;
+}
+
+.service-card h2 {
+  margin: 0;
+  font-size: 1.3em;
+  color: #333;
+}
+
+.service-card p {
+  margin: 0;
+  font-size: 0.9em;
+  line-height: 1.4;
+  color: #555454;
+}
+
+/* Footer adjustment for tablet */
+footer {
+  text-align: center;
+  padding: 15px;
+  color: white;
+  background-color: rgb(151, 103, 45);
+}
